@@ -1,0 +1,2590 @@
+cellIdPreamble: ''
+cells:
+  normal-1-fill:
+    dataRef: RX Ethernet1
+    bespoke:
+      dataRefs:
+      - RX Ethernet1
+      - TX Ethernet1
+      - STATE Ethernet1
+      formulas:
+      - 'u = data[''STATE Ethernet1''] == null ? -2 : (data[''STATE Ethernet1''] !=
+        1 ? -1 : (data[''RX Ethernet1''] == null or data[''TX Ethernet1''] == null
+        ? -2 : max(data[''RX Ethernet1''], data[''TX Ethernet1''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: &id001
+      - color: '#475569'
+        level: -2
+      - color: '#22c55e'
+        level: 0
+      - color: '#eab308'
+        level: 50
+      - color: '#ef4444'
+        level: 80
+  normal-1-label:
+    dataRef: RX Ethernet1
+    bespoke:
+      dataRefs:
+      - RX Ethernet1
+      - TX Ethernet1
+      - STATE Ethernet1
+      formulas:
+      - 'u = data[''STATE Ethernet1''] == null ? -2 : (data[''STATE Ethernet1''] !=
+        1 ? -1 : (data[''RX Ethernet1''] == null or data[''TX Ethernet1''] == null
+        ? -2 : max(data[''RX Ethernet1''], data[''TX Ethernet1''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-2-fill:
+    dataRef: RX Ethernet2
+    bespoke:
+      dataRefs:
+      - RX Ethernet2
+      - TX Ethernet2
+      - STATE Ethernet2
+      formulas:
+      - 'u = data[''STATE Ethernet2''] == null ? -2 : (data[''STATE Ethernet2''] !=
+        1 ? -1 : (data[''RX Ethernet2''] == null or data[''TX Ethernet2''] == null
+        ? -2 : max(data[''RX Ethernet2''], data[''TX Ethernet2''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-2-label:
+    dataRef: RX Ethernet2
+    bespoke:
+      dataRefs:
+      - RX Ethernet2
+      - TX Ethernet2
+      - STATE Ethernet2
+      formulas:
+      - 'u = data[''STATE Ethernet2''] == null ? -2 : (data[''STATE Ethernet2''] !=
+        1 ? -1 : (data[''RX Ethernet2''] == null or data[''TX Ethernet2''] == null
+        ? -2 : max(data[''RX Ethernet2''], data[''TX Ethernet2''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-3-fill:
+    dataRef: RX Ethernet3
+    bespoke:
+      dataRefs:
+      - RX Ethernet3
+      - TX Ethernet3
+      - STATE Ethernet3
+      formulas:
+      - 'u = data[''STATE Ethernet3''] == null ? -2 : (data[''STATE Ethernet3''] !=
+        1 ? -1 : (data[''RX Ethernet3''] == null or data[''TX Ethernet3''] == null
+        ? -2 : max(data[''RX Ethernet3''], data[''TX Ethernet3''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-3-label:
+    dataRef: RX Ethernet3
+    bespoke:
+      dataRefs:
+      - RX Ethernet3
+      - TX Ethernet3
+      - STATE Ethernet3
+      formulas:
+      - 'u = data[''STATE Ethernet3''] == null ? -2 : (data[''STATE Ethernet3''] !=
+        1 ? -1 : (data[''RX Ethernet3''] == null or data[''TX Ethernet3''] == null
+        ? -2 : max(data[''RX Ethernet3''], data[''TX Ethernet3''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-4-fill:
+    dataRef: RX Ethernet4
+    bespoke:
+      dataRefs:
+      - RX Ethernet4
+      - TX Ethernet4
+      - STATE Ethernet4
+      formulas:
+      - 'u = data[''STATE Ethernet4''] == null ? -2 : (data[''STATE Ethernet4''] !=
+        1 ? -1 : (data[''RX Ethernet4''] == null or data[''TX Ethernet4''] == null
+        ? -2 : max(data[''RX Ethernet4''], data[''TX Ethernet4''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-4-label:
+    dataRef: RX Ethernet4
+    bespoke:
+      dataRefs:
+      - RX Ethernet4
+      - TX Ethernet4
+      - STATE Ethernet4
+      formulas:
+      - 'u = data[''STATE Ethernet4''] == null ? -2 : (data[''STATE Ethernet4''] !=
+        1 ? -1 : (data[''RX Ethernet4''] == null or data[''TX Ethernet4''] == null
+        ? -2 : max(data[''RX Ethernet4''], data[''TX Ethernet4''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-5-fill:
+    dataRef: RX Ethernet5
+    bespoke:
+      dataRefs:
+      - RX Ethernet5
+      - TX Ethernet5
+      - STATE Ethernet5
+      formulas:
+      - 'u = data[''STATE Ethernet5''] == null ? -2 : (data[''STATE Ethernet5''] !=
+        1 ? -1 : (data[''RX Ethernet5''] == null or data[''TX Ethernet5''] == null
+        ? -2 : max(data[''RX Ethernet5''], data[''TX Ethernet5''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-5-label:
+    dataRef: RX Ethernet5
+    bespoke:
+      dataRefs:
+      - RX Ethernet5
+      - TX Ethernet5
+      - STATE Ethernet5
+      formulas:
+      - 'u = data[''STATE Ethernet5''] == null ? -2 : (data[''STATE Ethernet5''] !=
+        1 ? -1 : (data[''RX Ethernet5''] == null or data[''TX Ethernet5''] == null
+        ? -2 : max(data[''RX Ethernet5''], data[''TX Ethernet5''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-6-fill:
+    dataRef: RX Ethernet6
+    bespoke:
+      dataRefs:
+      - RX Ethernet6
+      - TX Ethernet6
+      - STATE Ethernet6
+      formulas:
+      - 'u = data[''STATE Ethernet6''] == null ? -2 : (data[''STATE Ethernet6''] !=
+        1 ? -1 : (data[''RX Ethernet6''] == null or data[''TX Ethernet6''] == null
+        ? -2 : max(data[''RX Ethernet6''], data[''TX Ethernet6''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-6-label:
+    dataRef: RX Ethernet6
+    bespoke:
+      dataRefs:
+      - RX Ethernet6
+      - TX Ethernet6
+      - STATE Ethernet6
+      formulas:
+      - 'u = data[''STATE Ethernet6''] == null ? -2 : (data[''STATE Ethernet6''] !=
+        1 ? -1 : (data[''RX Ethernet6''] == null or data[''TX Ethernet6''] == null
+        ? -2 : max(data[''RX Ethernet6''], data[''TX Ethernet6''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-7-fill:
+    dataRef: RX Ethernet7
+    bespoke:
+      dataRefs:
+      - RX Ethernet7
+      - TX Ethernet7
+      - STATE Ethernet7
+      formulas:
+      - 'u = data[''STATE Ethernet7''] == null ? -2 : (data[''STATE Ethernet7''] !=
+        1 ? -1 : (data[''RX Ethernet7''] == null or data[''TX Ethernet7''] == null
+        ? -2 : max(data[''RX Ethernet7''], data[''TX Ethernet7''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-7-label:
+    dataRef: RX Ethernet7
+    bespoke:
+      dataRefs:
+      - RX Ethernet7
+      - TX Ethernet7
+      - STATE Ethernet7
+      formulas:
+      - 'u = data[''STATE Ethernet7''] == null ? -2 : (data[''STATE Ethernet7''] !=
+        1 ? -1 : (data[''RX Ethernet7''] == null or data[''TX Ethernet7''] == null
+        ? -2 : max(data[''RX Ethernet7''], data[''TX Ethernet7''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-8-fill:
+    dataRef: RX Ethernet8
+    bespoke:
+      dataRefs:
+      - RX Ethernet8
+      - TX Ethernet8
+      - STATE Ethernet8
+      formulas:
+      - 'u = data[''STATE Ethernet8''] == null ? -2 : (data[''STATE Ethernet8''] !=
+        1 ? -1 : (data[''RX Ethernet8''] == null or data[''TX Ethernet8''] == null
+        ? -2 : max(data[''RX Ethernet8''], data[''TX Ethernet8''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-8-label:
+    dataRef: RX Ethernet8
+    bespoke:
+      dataRefs:
+      - RX Ethernet8
+      - TX Ethernet8
+      - STATE Ethernet8
+      formulas:
+      - 'u = data[''STATE Ethernet8''] == null ? -2 : (data[''STATE Ethernet8''] !=
+        1 ? -1 : (data[''RX Ethernet8''] == null or data[''TX Ethernet8''] == null
+        ? -2 : max(data[''RX Ethernet8''], data[''TX Ethernet8''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-9-fill:
+    dataRef: RX Ethernet9
+    bespoke:
+      dataRefs:
+      - RX Ethernet9
+      - TX Ethernet9
+      - STATE Ethernet9
+      formulas:
+      - 'u = data[''STATE Ethernet9''] == null ? -2 : (data[''STATE Ethernet9''] !=
+        1 ? -1 : (data[''RX Ethernet9''] == null or data[''TX Ethernet9''] == null
+        ? -2 : max(data[''RX Ethernet9''], data[''TX Ethernet9''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-9-label:
+    dataRef: RX Ethernet9
+    bespoke:
+      dataRefs:
+      - RX Ethernet9
+      - TX Ethernet9
+      - STATE Ethernet9
+      formulas:
+      - 'u = data[''STATE Ethernet9''] == null ? -2 : (data[''STATE Ethernet9''] !=
+        1 ? -1 : (data[''RX Ethernet9''] == null or data[''TX Ethernet9''] == null
+        ? -2 : max(data[''RX Ethernet9''], data[''TX Ethernet9''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-10-fill:
+    dataRef: RX Ethernet10
+    bespoke:
+      dataRefs:
+      - RX Ethernet10
+      - TX Ethernet10
+      - STATE Ethernet10
+      formulas:
+      - 'u = data[''STATE Ethernet10''] == null ? -2 : (data[''STATE Ethernet10'']
+        != 1 ? -1 : (data[''RX Ethernet10''] == null or data[''TX Ethernet10''] ==
+        null ? -2 : max(data[''RX Ethernet10''], data[''TX Ethernet10''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-10-label:
+    dataRef: RX Ethernet10
+    bespoke:
+      dataRefs:
+      - RX Ethernet10
+      - TX Ethernet10
+      - STATE Ethernet10
+      formulas:
+      - 'u = data[''STATE Ethernet10''] == null ? -2 : (data[''STATE Ethernet10'']
+        != 1 ? -1 : (data[''RX Ethernet10''] == null or data[''TX Ethernet10''] ==
+        null ? -2 : max(data[''RX Ethernet10''], data[''TX Ethernet10''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-11-fill:
+    dataRef: RX Ethernet11
+    bespoke:
+      dataRefs:
+      - RX Ethernet11
+      - TX Ethernet11
+      - STATE Ethernet11
+      formulas:
+      - 'u = data[''STATE Ethernet11''] == null ? -2 : (data[''STATE Ethernet11'']
+        != 1 ? -1 : (data[''RX Ethernet11''] == null or data[''TX Ethernet11''] ==
+        null ? -2 : max(data[''RX Ethernet11''], data[''TX Ethernet11''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-11-label:
+    dataRef: RX Ethernet11
+    bespoke:
+      dataRefs:
+      - RX Ethernet11
+      - TX Ethernet11
+      - STATE Ethernet11
+      formulas:
+      - 'u = data[''STATE Ethernet11''] == null ? -2 : (data[''STATE Ethernet11'']
+        != 1 ? -1 : (data[''RX Ethernet11''] == null or data[''TX Ethernet11''] ==
+        null ? -2 : max(data[''RX Ethernet11''], data[''TX Ethernet11''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-12-fill:
+    dataRef: RX Ethernet12
+    bespoke:
+      dataRefs:
+      - RX Ethernet12
+      - TX Ethernet12
+      - STATE Ethernet12
+      formulas:
+      - 'u = data[''STATE Ethernet12''] == null ? -2 : (data[''STATE Ethernet12'']
+        != 1 ? -1 : (data[''RX Ethernet12''] == null or data[''TX Ethernet12''] ==
+        null ? -2 : max(data[''RX Ethernet12''], data[''TX Ethernet12''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-12-label:
+    dataRef: RX Ethernet12
+    bespoke:
+      dataRefs:
+      - RX Ethernet12
+      - TX Ethernet12
+      - STATE Ethernet12
+      formulas:
+      - 'u = data[''STATE Ethernet12''] == null ? -2 : (data[''STATE Ethernet12'']
+        != 1 ? -1 : (data[''RX Ethernet12''] == null or data[''TX Ethernet12''] ==
+        null ? -2 : max(data[''RX Ethernet12''], data[''TX Ethernet12''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-13-fill:
+    dataRef: RX Ethernet13
+    bespoke:
+      dataRefs:
+      - RX Ethernet13
+      - TX Ethernet13
+      - STATE Ethernet13
+      formulas:
+      - 'u = data[''STATE Ethernet13''] == null ? -2 : (data[''STATE Ethernet13'']
+        != 1 ? -1 : (data[''RX Ethernet13''] == null or data[''TX Ethernet13''] ==
+        null ? -2 : max(data[''RX Ethernet13''], data[''TX Ethernet13''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-13-label:
+    dataRef: RX Ethernet13
+    bespoke:
+      dataRefs:
+      - RX Ethernet13
+      - TX Ethernet13
+      - STATE Ethernet13
+      formulas:
+      - 'u = data[''STATE Ethernet13''] == null ? -2 : (data[''STATE Ethernet13'']
+        != 1 ? -1 : (data[''RX Ethernet13''] == null or data[''TX Ethernet13''] ==
+        null ? -2 : max(data[''RX Ethernet13''], data[''TX Ethernet13''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-14-fill:
+    dataRef: RX Ethernet14
+    bespoke:
+      dataRefs:
+      - RX Ethernet14
+      - TX Ethernet14
+      - STATE Ethernet14
+      formulas:
+      - 'u = data[''STATE Ethernet14''] == null ? -2 : (data[''STATE Ethernet14'']
+        != 1 ? -1 : (data[''RX Ethernet14''] == null or data[''TX Ethernet14''] ==
+        null ? -2 : max(data[''RX Ethernet14''], data[''TX Ethernet14''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-14-label:
+    dataRef: RX Ethernet14
+    bespoke:
+      dataRefs:
+      - RX Ethernet14
+      - TX Ethernet14
+      - STATE Ethernet14
+      formulas:
+      - 'u = data[''STATE Ethernet14''] == null ? -2 : (data[''STATE Ethernet14'']
+        != 1 ? -1 : (data[''RX Ethernet14''] == null or data[''TX Ethernet14''] ==
+        null ? -2 : max(data[''RX Ethernet14''], data[''TX Ethernet14''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-15-fill:
+    dataRef: RX Ethernet15
+    bespoke:
+      dataRefs:
+      - RX Ethernet15
+      - TX Ethernet15
+      - STATE Ethernet15
+      formulas:
+      - 'u = data[''STATE Ethernet15''] == null ? -2 : (data[''STATE Ethernet15'']
+        != 1 ? -1 : (data[''RX Ethernet15''] == null or data[''TX Ethernet15''] ==
+        null ? -2 : max(data[''RX Ethernet15''], data[''TX Ethernet15''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-15-label:
+    dataRef: RX Ethernet15
+    bespoke:
+      dataRefs:
+      - RX Ethernet15
+      - TX Ethernet15
+      - STATE Ethernet15
+      formulas:
+      - 'u = data[''STATE Ethernet15''] == null ? -2 : (data[''STATE Ethernet15'']
+        != 1 ? -1 : (data[''RX Ethernet15''] == null or data[''TX Ethernet15''] ==
+        null ? -2 : max(data[''RX Ethernet15''], data[''TX Ethernet15''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-16-fill:
+    dataRef: RX Ethernet16
+    bespoke:
+      dataRefs:
+      - RX Ethernet16
+      - TX Ethernet16
+      - STATE Ethernet16
+      formulas:
+      - 'u = data[''STATE Ethernet16''] == null ? -2 : (data[''STATE Ethernet16'']
+        != 1 ? -1 : (data[''RX Ethernet16''] == null or data[''TX Ethernet16''] ==
+        null ? -2 : max(data[''RX Ethernet16''], data[''TX Ethernet16''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-16-label:
+    dataRef: RX Ethernet16
+    bespoke:
+      dataRefs:
+      - RX Ethernet16
+      - TX Ethernet16
+      - STATE Ethernet16
+      formulas:
+      - 'u = data[''STATE Ethernet16''] == null ? -2 : (data[''STATE Ethernet16'']
+        != 1 ? -1 : (data[''RX Ethernet16''] == null or data[''TX Ethernet16''] ==
+        null ? -2 : max(data[''RX Ethernet16''], data[''TX Ethernet16''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-17-fill:
+    dataRef: RX Ethernet17
+    bespoke:
+      dataRefs:
+      - RX Ethernet17
+      - TX Ethernet17
+      - STATE Ethernet17
+      formulas:
+      - 'u = data[''STATE Ethernet17''] == null ? -2 : (data[''STATE Ethernet17'']
+        != 1 ? -1 : (data[''RX Ethernet17''] == null or data[''TX Ethernet17''] ==
+        null ? -2 : max(data[''RX Ethernet17''], data[''TX Ethernet17''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-17-label:
+    dataRef: RX Ethernet17
+    bespoke:
+      dataRefs:
+      - RX Ethernet17
+      - TX Ethernet17
+      - STATE Ethernet17
+      formulas:
+      - 'u = data[''STATE Ethernet17''] == null ? -2 : (data[''STATE Ethernet17'']
+        != 1 ? -1 : (data[''RX Ethernet17''] == null or data[''TX Ethernet17''] ==
+        null ? -2 : max(data[''RX Ethernet17''], data[''TX Ethernet17''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-18-fill:
+    dataRef: RX Ethernet18
+    bespoke:
+      dataRefs:
+      - RX Ethernet18
+      - TX Ethernet18
+      - STATE Ethernet18
+      formulas:
+      - 'u = data[''STATE Ethernet18''] == null ? -2 : (data[''STATE Ethernet18'']
+        != 1 ? -1 : (data[''RX Ethernet18''] == null or data[''TX Ethernet18''] ==
+        null ? -2 : max(data[''RX Ethernet18''], data[''TX Ethernet18''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-18-label:
+    dataRef: RX Ethernet18
+    bespoke:
+      dataRefs:
+      - RX Ethernet18
+      - TX Ethernet18
+      - STATE Ethernet18
+      formulas:
+      - 'u = data[''STATE Ethernet18''] == null ? -2 : (data[''STATE Ethernet18'']
+        != 1 ? -1 : (data[''RX Ethernet18''] == null or data[''TX Ethernet18''] ==
+        null ? -2 : max(data[''RX Ethernet18''], data[''TX Ethernet18''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-19-fill:
+    dataRef: RX Ethernet19
+    bespoke:
+      dataRefs:
+      - RX Ethernet19
+      - TX Ethernet19
+      - STATE Ethernet19
+      formulas:
+      - 'u = data[''STATE Ethernet19''] == null ? -2 : (data[''STATE Ethernet19'']
+        != 1 ? -1 : (data[''RX Ethernet19''] == null or data[''TX Ethernet19''] ==
+        null ? -2 : max(data[''RX Ethernet19''], data[''TX Ethernet19''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-19-label:
+    dataRef: RX Ethernet19
+    bespoke:
+      dataRefs:
+      - RX Ethernet19
+      - TX Ethernet19
+      - STATE Ethernet19
+      formulas:
+      - 'u = data[''STATE Ethernet19''] == null ? -2 : (data[''STATE Ethernet19'']
+        != 1 ? -1 : (data[''RX Ethernet19''] == null or data[''TX Ethernet19''] ==
+        null ? -2 : max(data[''RX Ethernet19''], data[''TX Ethernet19''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-20-fill:
+    dataRef: RX Ethernet20
+    bespoke:
+      dataRefs:
+      - RX Ethernet20
+      - TX Ethernet20
+      - STATE Ethernet20
+      formulas:
+      - 'u = data[''STATE Ethernet20''] == null ? -2 : (data[''STATE Ethernet20'']
+        != 1 ? -1 : (data[''RX Ethernet20''] == null or data[''TX Ethernet20''] ==
+        null ? -2 : max(data[''RX Ethernet20''], data[''TX Ethernet20''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-20-label:
+    dataRef: RX Ethernet20
+    bespoke:
+      dataRefs:
+      - RX Ethernet20
+      - TX Ethernet20
+      - STATE Ethernet20
+      formulas:
+      - 'u = data[''STATE Ethernet20''] == null ? -2 : (data[''STATE Ethernet20'']
+        != 1 ? -1 : (data[''RX Ethernet20''] == null or data[''TX Ethernet20''] ==
+        null ? -2 : max(data[''RX Ethernet20''], data[''TX Ethernet20''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-21-fill:
+    dataRef: RX Ethernet21
+    bespoke:
+      dataRefs:
+      - RX Ethernet21
+      - TX Ethernet21
+      - STATE Ethernet21
+      formulas:
+      - 'u = data[''STATE Ethernet21''] == null ? -2 : (data[''STATE Ethernet21'']
+        != 1 ? -1 : (data[''RX Ethernet21''] == null or data[''TX Ethernet21''] ==
+        null ? -2 : max(data[''RX Ethernet21''], data[''TX Ethernet21''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-21-label:
+    dataRef: RX Ethernet21
+    bespoke:
+      dataRefs:
+      - RX Ethernet21
+      - TX Ethernet21
+      - STATE Ethernet21
+      formulas:
+      - 'u = data[''STATE Ethernet21''] == null ? -2 : (data[''STATE Ethernet21'']
+        != 1 ? -1 : (data[''RX Ethernet21''] == null or data[''TX Ethernet21''] ==
+        null ? -2 : max(data[''RX Ethernet21''], data[''TX Ethernet21''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-22-fill:
+    dataRef: RX Ethernet22
+    bespoke:
+      dataRefs:
+      - RX Ethernet22
+      - TX Ethernet22
+      - STATE Ethernet22
+      formulas:
+      - 'u = data[''STATE Ethernet22''] == null ? -2 : (data[''STATE Ethernet22'']
+        != 1 ? -1 : (data[''RX Ethernet22''] == null or data[''TX Ethernet22''] ==
+        null ? -2 : max(data[''RX Ethernet22''], data[''TX Ethernet22''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-22-label:
+    dataRef: RX Ethernet22
+    bespoke:
+      dataRefs:
+      - RX Ethernet22
+      - TX Ethernet22
+      - STATE Ethernet22
+      formulas:
+      - 'u = data[''STATE Ethernet22''] == null ? -2 : (data[''STATE Ethernet22'']
+        != 1 ? -1 : (data[''RX Ethernet22''] == null or data[''TX Ethernet22''] ==
+        null ? -2 : max(data[''RX Ethernet22''], data[''TX Ethernet22''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-23-fill:
+    dataRef: RX Ethernet23
+    bespoke:
+      dataRefs:
+      - RX Ethernet23
+      - TX Ethernet23
+      - STATE Ethernet23
+      formulas:
+      - 'u = data[''STATE Ethernet23''] == null ? -2 : (data[''STATE Ethernet23'']
+        != 1 ? -1 : (data[''RX Ethernet23''] == null or data[''TX Ethernet23''] ==
+        null ? -2 : max(data[''RX Ethernet23''], data[''TX Ethernet23''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-23-label:
+    dataRef: RX Ethernet23
+    bespoke:
+      dataRefs:
+      - RX Ethernet23
+      - TX Ethernet23
+      - STATE Ethernet23
+      formulas:
+      - 'u = data[''STATE Ethernet23''] == null ? -2 : (data[''STATE Ethernet23'']
+        != 1 ? -1 : (data[''RX Ethernet23''] == null or data[''TX Ethernet23''] ==
+        null ? -2 : max(data[''RX Ethernet23''], data[''TX Ethernet23''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-24-fill:
+    dataRef: RX Ethernet24
+    bespoke:
+      dataRefs:
+      - RX Ethernet24
+      - TX Ethernet24
+      - STATE Ethernet24
+      formulas:
+      - 'u = data[''STATE Ethernet24''] == null ? -2 : (data[''STATE Ethernet24'']
+        != 1 ? -1 : (data[''RX Ethernet24''] == null or data[''TX Ethernet24''] ==
+        null ? -2 : max(data[''RX Ethernet24''], data[''TX Ethernet24''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-24-label:
+    dataRef: RX Ethernet24
+    bespoke:
+      dataRefs:
+      - RX Ethernet24
+      - TX Ethernet24
+      - STATE Ethernet24
+      formulas:
+      - 'u = data[''STATE Ethernet24''] == null ? -2 : (data[''STATE Ethernet24'']
+        != 1 ? -1 : (data[''RX Ethernet24''] == null or data[''TX Ethernet24''] ==
+        null ? -2 : max(data[''RX Ethernet24''], data[''TX Ethernet24''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-25-fill:
+    dataRef: RX Ethernet25
+    bespoke:
+      dataRefs:
+      - RX Ethernet25
+      - TX Ethernet25
+      - STATE Ethernet25
+      formulas:
+      - 'u = data[''STATE Ethernet25''] == null ? -2 : (data[''STATE Ethernet25'']
+        != 1 ? -1 : (data[''RX Ethernet25''] == null or data[''TX Ethernet25''] ==
+        null ? -2 : max(data[''RX Ethernet25''], data[''TX Ethernet25''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-25-label:
+    dataRef: RX Ethernet25
+    bespoke:
+      dataRefs:
+      - RX Ethernet25
+      - TX Ethernet25
+      - STATE Ethernet25
+      formulas:
+      - 'u = data[''STATE Ethernet25''] == null ? -2 : (data[''STATE Ethernet25'']
+        != 1 ? -1 : (data[''RX Ethernet25''] == null or data[''TX Ethernet25''] ==
+        null ? -2 : max(data[''RX Ethernet25''], data[''TX Ethernet25''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-26-fill:
+    dataRef: RX Ethernet26
+    bespoke:
+      dataRefs:
+      - RX Ethernet26
+      - TX Ethernet26
+      - STATE Ethernet26
+      formulas:
+      - 'u = data[''STATE Ethernet26''] == null ? -2 : (data[''STATE Ethernet26'']
+        != 1 ? -1 : (data[''RX Ethernet26''] == null or data[''TX Ethernet26''] ==
+        null ? -2 : max(data[''RX Ethernet26''], data[''TX Ethernet26''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-26-label:
+    dataRef: RX Ethernet26
+    bespoke:
+      dataRefs:
+      - RX Ethernet26
+      - TX Ethernet26
+      - STATE Ethernet26
+      formulas:
+      - 'u = data[''STATE Ethernet26''] == null ? -2 : (data[''STATE Ethernet26'']
+        != 1 ? -1 : (data[''RX Ethernet26''] == null or data[''TX Ethernet26''] ==
+        null ? -2 : max(data[''RX Ethernet26''], data[''TX Ethernet26''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-27-fill:
+    dataRef: RX Ethernet27
+    bespoke:
+      dataRefs:
+      - RX Ethernet27
+      - TX Ethernet27
+      - STATE Ethernet27
+      formulas:
+      - 'u = data[''STATE Ethernet27''] == null ? -2 : (data[''STATE Ethernet27'']
+        != 1 ? -1 : (data[''RX Ethernet27''] == null or data[''TX Ethernet27''] ==
+        null ? -2 : max(data[''RX Ethernet27''], data[''TX Ethernet27''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-27-label:
+    dataRef: RX Ethernet27
+    bespoke:
+      dataRefs:
+      - RX Ethernet27
+      - TX Ethernet27
+      - STATE Ethernet27
+      formulas:
+      - 'u = data[''STATE Ethernet27''] == null ? -2 : (data[''STATE Ethernet27'']
+        != 1 ? -1 : (data[''RX Ethernet27''] == null or data[''TX Ethernet27''] ==
+        null ? -2 : max(data[''RX Ethernet27''], data[''TX Ethernet27''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-28-fill:
+    dataRef: RX Ethernet28
+    bespoke:
+      dataRefs:
+      - RX Ethernet28
+      - TX Ethernet28
+      - STATE Ethernet28
+      formulas:
+      - 'u = data[''STATE Ethernet28''] == null ? -2 : (data[''STATE Ethernet28'']
+        != 1 ? -1 : (data[''RX Ethernet28''] == null or data[''TX Ethernet28''] ==
+        null ? -2 : max(data[''RX Ethernet28''], data[''TX Ethernet28''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-28-label:
+    dataRef: RX Ethernet28
+    bespoke:
+      dataRefs:
+      - RX Ethernet28
+      - TX Ethernet28
+      - STATE Ethernet28
+      formulas:
+      - 'u = data[''STATE Ethernet28''] == null ? -2 : (data[''STATE Ethernet28'']
+        != 1 ? -1 : (data[''RX Ethernet28''] == null or data[''TX Ethernet28''] ==
+        null ? -2 : max(data[''RX Ethernet28''], data[''TX Ethernet28''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-29-fill:
+    dataRef: RX Ethernet29
+    bespoke:
+      dataRefs:
+      - RX Ethernet29
+      - TX Ethernet29
+      - STATE Ethernet29
+      formulas:
+      - 'u = data[''STATE Ethernet29''] == null ? -2 : (data[''STATE Ethernet29'']
+        != 1 ? -1 : (data[''RX Ethernet29''] == null or data[''TX Ethernet29''] ==
+        null ? -2 : max(data[''RX Ethernet29''], data[''TX Ethernet29''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-29-label:
+    dataRef: RX Ethernet29
+    bespoke:
+      dataRefs:
+      - RX Ethernet29
+      - TX Ethernet29
+      - STATE Ethernet29
+      formulas:
+      - 'u = data[''STATE Ethernet29''] == null ? -2 : (data[''STATE Ethernet29'']
+        != 1 ? -1 : (data[''RX Ethernet29''] == null or data[''TX Ethernet29''] ==
+        null ? -2 : max(data[''RX Ethernet29''], data[''TX Ethernet29''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-30-fill:
+    dataRef: RX Ethernet30
+    bespoke:
+      dataRefs:
+      - RX Ethernet30
+      - TX Ethernet30
+      - STATE Ethernet30
+      formulas:
+      - 'u = data[''STATE Ethernet30''] == null ? -2 : (data[''STATE Ethernet30'']
+        != 1 ? -1 : (data[''RX Ethernet30''] == null or data[''TX Ethernet30''] ==
+        null ? -2 : max(data[''RX Ethernet30''], data[''TX Ethernet30''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-30-label:
+    dataRef: RX Ethernet30
+    bespoke:
+      dataRefs:
+      - RX Ethernet30
+      - TX Ethernet30
+      - STATE Ethernet30
+      formulas:
+      - 'u = data[''STATE Ethernet30''] == null ? -2 : (data[''STATE Ethernet30'']
+        != 1 ? -1 : (data[''RX Ethernet30''] == null or data[''TX Ethernet30''] ==
+        null ? -2 : max(data[''RX Ethernet30''], data[''TX Ethernet30''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-31-fill:
+    dataRef: RX Ethernet31
+    bespoke:
+      dataRefs:
+      - RX Ethernet31
+      - TX Ethernet31
+      - STATE Ethernet31
+      formulas:
+      - 'u = data[''STATE Ethernet31''] == null ? -2 : (data[''STATE Ethernet31'']
+        != 1 ? -1 : (data[''RX Ethernet31''] == null or data[''TX Ethernet31''] ==
+        null ? -2 : max(data[''RX Ethernet31''], data[''TX Ethernet31''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-31-label:
+    dataRef: RX Ethernet31
+    bespoke:
+      dataRefs:
+      - RX Ethernet31
+      - TX Ethernet31
+      - STATE Ethernet31
+      formulas:
+      - 'u = data[''STATE Ethernet31''] == null ? -2 : (data[''STATE Ethernet31'']
+        != 1 ? -1 : (data[''RX Ethernet31''] == null or data[''TX Ethernet31''] ==
+        null ? -2 : max(data[''RX Ethernet31''], data[''TX Ethernet31''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-32-fill:
+    dataRef: RX Ethernet32
+    bespoke:
+      dataRefs:
+      - RX Ethernet32
+      - TX Ethernet32
+      - STATE Ethernet32
+      formulas:
+      - 'u = data[''STATE Ethernet32''] == null ? -2 : (data[''STATE Ethernet32'']
+        != 1 ? -1 : (data[''RX Ethernet32''] == null or data[''TX Ethernet32''] ==
+        null ? -2 : max(data[''RX Ethernet32''], data[''TX Ethernet32''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-32-label:
+    dataRef: RX Ethernet32
+    bespoke:
+      dataRefs:
+      - RX Ethernet32
+      - TX Ethernet32
+      - STATE Ethernet32
+      formulas:
+      - 'u = data[''STATE Ethernet32''] == null ? -2 : (data[''STATE Ethernet32'']
+        != 1 ? -1 : (data[''RX Ethernet32''] == null or data[''TX Ethernet32''] ==
+        null ? -2 : max(data[''RX Ethernet32''], data[''TX Ethernet32''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-33-fill:
+    dataRef: RX Ethernet33
+    bespoke:
+      dataRefs:
+      - RX Ethernet33
+      - TX Ethernet33
+      - STATE Ethernet33
+      formulas:
+      - 'u = data[''STATE Ethernet33''] == null ? -2 : (data[''STATE Ethernet33'']
+        != 1 ? -1 : (data[''RX Ethernet33''] == null or data[''TX Ethernet33''] ==
+        null ? -2 : max(data[''RX Ethernet33''], data[''TX Ethernet33''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-33-label:
+    dataRef: RX Ethernet33
+    bespoke:
+      dataRefs:
+      - RX Ethernet33
+      - TX Ethernet33
+      - STATE Ethernet33
+      formulas:
+      - 'u = data[''STATE Ethernet33''] == null ? -2 : (data[''STATE Ethernet33'']
+        != 1 ? -1 : (data[''RX Ethernet33''] == null or data[''TX Ethernet33''] ==
+        null ? -2 : max(data[''RX Ethernet33''], data[''TX Ethernet33''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-34-fill:
+    dataRef: RX Ethernet34
+    bespoke:
+      dataRefs:
+      - RX Ethernet34
+      - TX Ethernet34
+      - STATE Ethernet34
+      formulas:
+      - 'u = data[''STATE Ethernet34''] == null ? -2 : (data[''STATE Ethernet34'']
+        != 1 ? -1 : (data[''RX Ethernet34''] == null or data[''TX Ethernet34''] ==
+        null ? -2 : max(data[''RX Ethernet34''], data[''TX Ethernet34''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-34-label:
+    dataRef: RX Ethernet34
+    bespoke:
+      dataRefs:
+      - RX Ethernet34
+      - TX Ethernet34
+      - STATE Ethernet34
+      formulas:
+      - 'u = data[''STATE Ethernet34''] == null ? -2 : (data[''STATE Ethernet34'']
+        != 1 ? -1 : (data[''RX Ethernet34''] == null or data[''TX Ethernet34''] ==
+        null ? -2 : max(data[''RX Ethernet34''], data[''TX Ethernet34''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-35-fill:
+    dataRef: RX Ethernet35
+    bespoke:
+      dataRefs:
+      - RX Ethernet35
+      - TX Ethernet35
+      - STATE Ethernet35
+      formulas:
+      - 'u = data[''STATE Ethernet35''] == null ? -2 : (data[''STATE Ethernet35'']
+        != 1 ? -1 : (data[''RX Ethernet35''] == null or data[''TX Ethernet35''] ==
+        null ? -2 : max(data[''RX Ethernet35''], data[''TX Ethernet35''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-35-label:
+    dataRef: RX Ethernet35
+    bespoke:
+      dataRefs:
+      - RX Ethernet35
+      - TX Ethernet35
+      - STATE Ethernet35
+      formulas:
+      - 'u = data[''STATE Ethernet35''] == null ? -2 : (data[''STATE Ethernet35'']
+        != 1 ? -1 : (data[''RX Ethernet35''] == null or data[''TX Ethernet35''] ==
+        null ? -2 : max(data[''RX Ethernet35''], data[''TX Ethernet35''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-36-fill:
+    dataRef: RX Ethernet36
+    bespoke:
+      dataRefs:
+      - RX Ethernet36
+      - TX Ethernet36
+      - STATE Ethernet36
+      formulas:
+      - 'u = data[''STATE Ethernet36''] == null ? -2 : (data[''STATE Ethernet36'']
+        != 1 ? -1 : (data[''RX Ethernet36''] == null or data[''TX Ethernet36''] ==
+        null ? -2 : max(data[''RX Ethernet36''], data[''TX Ethernet36''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-36-label:
+    dataRef: RX Ethernet36
+    bespoke:
+      dataRefs:
+      - RX Ethernet36
+      - TX Ethernet36
+      - STATE Ethernet36
+      formulas:
+      - 'u = data[''STATE Ethernet36''] == null ? -2 : (data[''STATE Ethernet36'']
+        != 1 ? -1 : (data[''RX Ethernet36''] == null or data[''TX Ethernet36''] ==
+        null ? -2 : max(data[''RX Ethernet36''], data[''TX Ethernet36''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-37-fill:
+    dataRef: RX Ethernet37
+    bespoke:
+      dataRefs:
+      - RX Ethernet37
+      - TX Ethernet37
+      - STATE Ethernet37
+      formulas:
+      - 'u = data[''STATE Ethernet37''] == null ? -2 : (data[''STATE Ethernet37'']
+        != 1 ? -1 : (data[''RX Ethernet37''] == null or data[''TX Ethernet37''] ==
+        null ? -2 : max(data[''RX Ethernet37''], data[''TX Ethernet37''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-37-label:
+    dataRef: RX Ethernet37
+    bespoke:
+      dataRefs:
+      - RX Ethernet37
+      - TX Ethernet37
+      - STATE Ethernet37
+      formulas:
+      - 'u = data[''STATE Ethernet37''] == null ? -2 : (data[''STATE Ethernet37'']
+        != 1 ? -1 : (data[''RX Ethernet37''] == null or data[''TX Ethernet37''] ==
+        null ? -2 : max(data[''RX Ethernet37''], data[''TX Ethernet37''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-38-fill:
+    dataRef: RX Ethernet38
+    bespoke:
+      dataRefs:
+      - RX Ethernet38
+      - TX Ethernet38
+      - STATE Ethernet38
+      formulas:
+      - 'u = data[''STATE Ethernet38''] == null ? -2 : (data[''STATE Ethernet38'']
+        != 1 ? -1 : (data[''RX Ethernet38''] == null or data[''TX Ethernet38''] ==
+        null ? -2 : max(data[''RX Ethernet38''], data[''TX Ethernet38''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-38-label:
+    dataRef: RX Ethernet38
+    bespoke:
+      dataRefs:
+      - RX Ethernet38
+      - TX Ethernet38
+      - STATE Ethernet38
+      formulas:
+      - 'u = data[''STATE Ethernet38''] == null ? -2 : (data[''STATE Ethernet38'']
+        != 1 ? -1 : (data[''RX Ethernet38''] == null or data[''TX Ethernet38''] ==
+        null ? -2 : max(data[''RX Ethernet38''], data[''TX Ethernet38''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-39-fill:
+    dataRef: RX Ethernet39
+    bespoke:
+      dataRefs:
+      - RX Ethernet39
+      - TX Ethernet39
+      - STATE Ethernet39
+      formulas:
+      - 'u = data[''STATE Ethernet39''] == null ? -2 : (data[''STATE Ethernet39'']
+        != 1 ? -1 : (data[''RX Ethernet39''] == null or data[''TX Ethernet39''] ==
+        null ? -2 : max(data[''RX Ethernet39''], data[''TX Ethernet39''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-39-label:
+    dataRef: RX Ethernet39
+    bespoke:
+      dataRefs:
+      - RX Ethernet39
+      - TX Ethernet39
+      - STATE Ethernet39
+      formulas:
+      - 'u = data[''STATE Ethernet39''] == null ? -2 : (data[''STATE Ethernet39'']
+        != 1 ? -1 : (data[''RX Ethernet39''] == null or data[''TX Ethernet39''] ==
+        null ? -2 : max(data[''RX Ethernet39''], data[''TX Ethernet39''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-40-fill:
+    dataRef: RX Ethernet40
+    bespoke:
+      dataRefs:
+      - RX Ethernet40
+      - TX Ethernet40
+      - STATE Ethernet40
+      formulas:
+      - 'u = data[''STATE Ethernet40''] == null ? -2 : (data[''STATE Ethernet40'']
+        != 1 ? -1 : (data[''RX Ethernet40''] == null or data[''TX Ethernet40''] ==
+        null ? -2 : max(data[''RX Ethernet40''], data[''TX Ethernet40''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-40-label:
+    dataRef: RX Ethernet40
+    bespoke:
+      dataRefs:
+      - RX Ethernet40
+      - TX Ethernet40
+      - STATE Ethernet40
+      formulas:
+      - 'u = data[''STATE Ethernet40''] == null ? -2 : (data[''STATE Ethernet40'']
+        != 1 ? -1 : (data[''RX Ethernet40''] == null or data[''TX Ethernet40''] ==
+        null ? -2 : max(data[''RX Ethernet40''], data[''TX Ethernet40''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-41-fill:
+    dataRef: RX Ethernet41
+    bespoke:
+      dataRefs:
+      - RX Ethernet41
+      - TX Ethernet41
+      - STATE Ethernet41
+      formulas:
+      - 'u = data[''STATE Ethernet41''] == null ? -2 : (data[''STATE Ethernet41'']
+        != 1 ? -1 : (data[''RX Ethernet41''] == null or data[''TX Ethernet41''] ==
+        null ? -2 : max(data[''RX Ethernet41''], data[''TX Ethernet41''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-41-label:
+    dataRef: RX Ethernet41
+    bespoke:
+      dataRefs:
+      - RX Ethernet41
+      - TX Ethernet41
+      - STATE Ethernet41
+      formulas:
+      - 'u = data[''STATE Ethernet41''] == null ? -2 : (data[''STATE Ethernet41'']
+        != 1 ? -1 : (data[''RX Ethernet41''] == null or data[''TX Ethernet41''] ==
+        null ? -2 : max(data[''RX Ethernet41''], data[''TX Ethernet41''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-42-fill:
+    dataRef: RX Ethernet42
+    bespoke:
+      dataRefs:
+      - RX Ethernet42
+      - TX Ethernet42
+      - STATE Ethernet42
+      formulas:
+      - 'u = data[''STATE Ethernet42''] == null ? -2 : (data[''STATE Ethernet42'']
+        != 1 ? -1 : (data[''RX Ethernet42''] == null or data[''TX Ethernet42''] ==
+        null ? -2 : max(data[''RX Ethernet42''], data[''TX Ethernet42''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-42-label:
+    dataRef: RX Ethernet42
+    bespoke:
+      dataRefs:
+      - RX Ethernet42
+      - TX Ethernet42
+      - STATE Ethernet42
+      formulas:
+      - 'u = data[''STATE Ethernet42''] == null ? -2 : (data[''STATE Ethernet42'']
+        != 1 ? -1 : (data[''RX Ethernet42''] == null or data[''TX Ethernet42''] ==
+        null ? -2 : max(data[''RX Ethernet42''], data[''TX Ethernet42''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-43-fill:
+    dataRef: RX Ethernet43
+    bespoke:
+      dataRefs:
+      - RX Ethernet43
+      - TX Ethernet43
+      - STATE Ethernet43
+      formulas:
+      - 'u = data[''STATE Ethernet43''] == null ? -2 : (data[''STATE Ethernet43'']
+        != 1 ? -1 : (data[''RX Ethernet43''] == null or data[''TX Ethernet43''] ==
+        null ? -2 : max(data[''RX Ethernet43''], data[''TX Ethernet43''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-43-label:
+    dataRef: RX Ethernet43
+    bespoke:
+      dataRefs:
+      - RX Ethernet43
+      - TX Ethernet43
+      - STATE Ethernet43
+      formulas:
+      - 'u = data[''STATE Ethernet43''] == null ? -2 : (data[''STATE Ethernet43'']
+        != 1 ? -1 : (data[''RX Ethernet43''] == null or data[''TX Ethernet43''] ==
+        null ? -2 : max(data[''RX Ethernet43''], data[''TX Ethernet43''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-44-fill:
+    dataRef: RX Ethernet44
+    bespoke:
+      dataRefs:
+      - RX Ethernet44
+      - TX Ethernet44
+      - STATE Ethernet44
+      formulas:
+      - 'u = data[''STATE Ethernet44''] == null ? -2 : (data[''STATE Ethernet44'']
+        != 1 ? -1 : (data[''RX Ethernet44''] == null or data[''TX Ethernet44''] ==
+        null ? -2 : max(data[''RX Ethernet44''], data[''TX Ethernet44''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-44-label:
+    dataRef: RX Ethernet44
+    bespoke:
+      dataRefs:
+      - RX Ethernet44
+      - TX Ethernet44
+      - STATE Ethernet44
+      formulas:
+      - 'u = data[''STATE Ethernet44''] == null ? -2 : (data[''STATE Ethernet44'']
+        != 1 ? -1 : (data[''RX Ethernet44''] == null or data[''TX Ethernet44''] ==
+        null ? -2 : max(data[''RX Ethernet44''], data[''TX Ethernet44''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-45-fill:
+    dataRef: RX Ethernet45
+    bespoke:
+      dataRefs:
+      - RX Ethernet45
+      - TX Ethernet45
+      - STATE Ethernet45
+      formulas:
+      - 'u = data[''STATE Ethernet45''] == null ? -2 : (data[''STATE Ethernet45'']
+        != 1 ? -1 : (data[''RX Ethernet45''] == null or data[''TX Ethernet45''] ==
+        null ? -2 : max(data[''RX Ethernet45''], data[''TX Ethernet45''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-45-label:
+    dataRef: RX Ethernet45
+    bespoke:
+      dataRefs:
+      - RX Ethernet45
+      - TX Ethernet45
+      - STATE Ethernet45
+      formulas:
+      - 'u = data[''STATE Ethernet45''] == null ? -2 : (data[''STATE Ethernet45'']
+        != 1 ? -1 : (data[''RX Ethernet45''] == null or data[''TX Ethernet45''] ==
+        null ? -2 : max(data[''RX Ethernet45''], data[''TX Ethernet45''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-46-fill:
+    dataRef: RX Ethernet46
+    bespoke:
+      dataRefs:
+      - RX Ethernet46
+      - TX Ethernet46
+      - STATE Ethernet46
+      formulas:
+      - 'u = data[''STATE Ethernet46''] == null ? -2 : (data[''STATE Ethernet46'']
+        != 1 ? -1 : (data[''RX Ethernet46''] == null or data[''TX Ethernet46''] ==
+        null ? -2 : max(data[''RX Ethernet46''], data[''TX Ethernet46''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-46-label:
+    dataRef: RX Ethernet46
+    bespoke:
+      dataRefs:
+      - RX Ethernet46
+      - TX Ethernet46
+      - STATE Ethernet46
+      formulas:
+      - 'u = data[''STATE Ethernet46''] == null ? -2 : (data[''STATE Ethernet46'']
+        != 1 ? -1 : (data[''RX Ethernet46''] == null or data[''TX Ethernet46''] ==
+        null ? -2 : max(data[''RX Ethernet46''], data[''TX Ethernet46''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-47-fill:
+    dataRef: RX Ethernet47
+    bespoke:
+      dataRefs:
+      - RX Ethernet47
+      - TX Ethernet47
+      - STATE Ethernet47
+      formulas:
+      - 'u = data[''STATE Ethernet47''] == null ? -2 : (data[''STATE Ethernet47'']
+        != 1 ? -1 : (data[''RX Ethernet47''] == null or data[''TX Ethernet47''] ==
+        null ? -2 : max(data[''RX Ethernet47''], data[''TX Ethernet47''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-47-label:
+    dataRef: RX Ethernet47
+    bespoke:
+      dataRefs:
+      - RX Ethernet47
+      - TX Ethernet47
+      - STATE Ethernet47
+      formulas:
+      - 'u = data[''STATE Ethernet47''] == null ? -2 : (data[''STATE Ethernet47'']
+        != 1 ? -1 : (data[''RX Ethernet47''] == null or data[''TX Ethernet47''] ==
+        null ? -2 : max(data[''RX Ethernet47''], data[''TX Ethernet47''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-48-fill:
+    dataRef: RX Ethernet48
+    bespoke:
+      dataRefs:
+      - RX Ethernet48
+      - TX Ethernet48
+      - STATE Ethernet48
+      formulas:
+      - 'u = data[''STATE Ethernet48''] == null ? -2 : (data[''STATE Ethernet48'']
+        != 1 ? -1 : (data[''RX Ethernet48''] == null or data[''TX Ethernet48''] ==
+        null ? -2 : max(data[''RX Ethernet48''], data[''TX Ethernet48''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-48-label:
+    dataRef: RX Ethernet48
+    bespoke:
+      dataRefs:
+      - RX Ethernet48
+      - TX Ethernet48
+      - STATE Ethernet48
+      formulas:
+      - 'u = data[''STATE Ethernet48''] == null ? -2 : (data[''STATE Ethernet48'']
+        != 1 ? -1 : (data[''RX Ethernet48''] == null or data[''TX Ethernet48''] ==
+        null ? -2 : max(data[''RX Ethernet48''], data[''TX Ethernet48''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-49-fill:
+    dataRef: RX Ethernet49
+    bespoke:
+      dataRefs:
+      - RX Ethernet49
+      - TX Ethernet49
+      - STATE Ethernet49
+      formulas:
+      - 'u = data[''STATE Ethernet49''] == null ? -2 : (data[''STATE Ethernet49'']
+        != 1 ? -1 : (data[''RX Ethernet49''] == null or data[''TX Ethernet49''] ==
+        null ? -2 : max(data[''RX Ethernet49''], data[''TX Ethernet49''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-49-label:
+    dataRef: RX Ethernet49
+    bespoke:
+      dataRefs:
+      - RX Ethernet49
+      - TX Ethernet49
+      - STATE Ethernet49
+      formulas:
+      - 'u = data[''STATE Ethernet49''] == null ? -2 : (data[''STATE Ethernet49'']
+        != 1 ? -1 : (data[''RX Ethernet49''] == null or data[''TX Ethernet49''] ==
+        null ? -2 : max(data[''RX Ethernet49''], data[''TX Ethernet49''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-49:
+    dataRef: MODE 49
+    bespoke:
+      dataRefs:
+      - MODE 49
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 49''] == 1 ? ''hidden'' : ''visible'''
+  lane-49-1-fill:
+    dataRef: RX Ethernet49/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/1
+      - TX Ethernet49/1
+      - STATE Ethernet49/1
+      formulas:
+      - 'u = data[''STATE Ethernet49/1''] == null ? -2 : (data[''STATE Ethernet49/1'']
+        != 1 ? -1 : (data[''RX Ethernet49/1''] == null or data[''TX Ethernet49/1'']
+        == null ? -2 : max(data[''RX Ethernet49/1''], data[''TX Ethernet49/1''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-49-1-label:
+    dataRef: RX Ethernet49/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/1
+      - TX Ethernet49/1
+      - STATE Ethernet49/1
+      formulas:
+      - 'u = data[''STATE Ethernet49/1''] == null ? -2 : (data[''STATE Ethernet49/1'']
+        != 1 ? -1 : (data[''RX Ethernet49/1''] == null or data[''TX Ethernet49/1'']
+        == null ? -2 : max(data[''RX Ethernet49/1''], data[''TX Ethernet49/1''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-49-1:
+    dataRef: MODE 49
+    bespoke:
+      dataRefs:
+      - MODE 49
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 49''] == 1 ? ''visible'' : ''hidden'''
+  lane-49-2-fill:
+    dataRef: RX Ethernet49/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/2
+      - TX Ethernet49/2
+      - STATE Ethernet49/2
+      formulas:
+      - 'u = data[''STATE Ethernet49/2''] == null ? -2 : (data[''STATE Ethernet49/2'']
+        != 1 ? -1 : (data[''RX Ethernet49/2''] == null or data[''TX Ethernet49/2'']
+        == null ? -2 : max(data[''RX Ethernet49/2''], data[''TX Ethernet49/2''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-49-2-label:
+    dataRef: RX Ethernet49/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/2
+      - TX Ethernet49/2
+      - STATE Ethernet49/2
+      formulas:
+      - 'u = data[''STATE Ethernet49/2''] == null ? -2 : (data[''STATE Ethernet49/2'']
+        != 1 ? -1 : (data[''RX Ethernet49/2''] == null or data[''TX Ethernet49/2'']
+        == null ? -2 : max(data[''RX Ethernet49/2''], data[''TX Ethernet49/2''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-49-2:
+    dataRef: MODE 49
+    bespoke:
+      dataRefs:
+      - MODE 49
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 49''] == 1 ? ''visible'' : ''hidden'''
+  lane-49-3-fill:
+    dataRef: RX Ethernet49/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/3
+      - TX Ethernet49/3
+      - STATE Ethernet49/3
+      formulas:
+      - 'u = data[''STATE Ethernet49/3''] == null ? -2 : (data[''STATE Ethernet49/3'']
+        != 1 ? -1 : (data[''RX Ethernet49/3''] == null or data[''TX Ethernet49/3'']
+        == null ? -2 : max(data[''RX Ethernet49/3''], data[''TX Ethernet49/3''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-49-3-label:
+    dataRef: RX Ethernet49/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/3
+      - TX Ethernet49/3
+      - STATE Ethernet49/3
+      formulas:
+      - 'u = data[''STATE Ethernet49/3''] == null ? -2 : (data[''STATE Ethernet49/3'']
+        != 1 ? -1 : (data[''RX Ethernet49/3''] == null or data[''TX Ethernet49/3'']
+        == null ? -2 : max(data[''RX Ethernet49/3''], data[''TX Ethernet49/3''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-49-3:
+    dataRef: MODE 49
+    bespoke:
+      dataRefs:
+      - MODE 49
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 49''] == 1 ? ''visible'' : ''hidden'''
+  lane-49-4-fill:
+    dataRef: RX Ethernet49/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/4
+      - TX Ethernet49/4
+      - STATE Ethernet49/4
+      formulas:
+      - 'u = data[''STATE Ethernet49/4''] == null ? -2 : (data[''STATE Ethernet49/4'']
+        != 1 ? -1 : (data[''RX Ethernet49/4''] == null or data[''TX Ethernet49/4'']
+        == null ? -2 : max(data[''RX Ethernet49/4''], data[''TX Ethernet49/4''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-49-4-label:
+    dataRef: RX Ethernet49/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet49/4
+      - TX Ethernet49/4
+      - STATE Ethernet49/4
+      formulas:
+      - 'u = data[''STATE Ethernet49/4''] == null ? -2 : (data[''STATE Ethernet49/4'']
+        != 1 ? -1 : (data[''RX Ethernet49/4''] == null or data[''TX Ethernet49/4'']
+        == null ? -2 : max(data[''RX Ethernet49/4''], data[''TX Ethernet49/4''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-49-4:
+    dataRef: MODE 49
+    bespoke:
+      dataRefs:
+      - MODE 49
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 49''] == 1 ? ''visible'' : ''hidden'''
+  normal-50-fill:
+    dataRef: RX Ethernet50
+    bespoke:
+      dataRefs:
+      - RX Ethernet50
+      - TX Ethernet50
+      - STATE Ethernet50
+      formulas:
+      - 'u = data[''STATE Ethernet50''] == null ? -2 : (data[''STATE Ethernet50'']
+        != 1 ? -1 : (data[''RX Ethernet50''] == null or data[''TX Ethernet50''] ==
+        null ? -2 : max(data[''RX Ethernet50''], data[''TX Ethernet50''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-50-label:
+    dataRef: RX Ethernet50
+    bespoke:
+      dataRefs:
+      - RX Ethernet50
+      - TX Ethernet50
+      - STATE Ethernet50
+      formulas:
+      - 'u = data[''STATE Ethernet50''] == null ? -2 : (data[''STATE Ethernet50'']
+        != 1 ? -1 : (data[''RX Ethernet50''] == null or data[''TX Ethernet50''] ==
+        null ? -2 : max(data[''RX Ethernet50''], data[''TX Ethernet50''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-50:
+    dataRef: MODE 50
+    bespoke:
+      dataRefs:
+      - MODE 50
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 50''] == 1 ? ''hidden'' : ''visible'''
+  lane-50-1-fill:
+    dataRef: RX Ethernet50/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/1
+      - TX Ethernet50/1
+      - STATE Ethernet50/1
+      formulas:
+      - 'u = data[''STATE Ethernet50/1''] == null ? -2 : (data[''STATE Ethernet50/1'']
+        != 1 ? -1 : (data[''RX Ethernet50/1''] == null or data[''TX Ethernet50/1'']
+        == null ? -2 : max(data[''RX Ethernet50/1''], data[''TX Ethernet50/1''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-50-1-label:
+    dataRef: RX Ethernet50/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/1
+      - TX Ethernet50/1
+      - STATE Ethernet50/1
+      formulas:
+      - 'u = data[''STATE Ethernet50/1''] == null ? -2 : (data[''STATE Ethernet50/1'']
+        != 1 ? -1 : (data[''RX Ethernet50/1''] == null or data[''TX Ethernet50/1'']
+        == null ? -2 : max(data[''RX Ethernet50/1''], data[''TX Ethernet50/1''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-50-1:
+    dataRef: MODE 50
+    bespoke:
+      dataRefs:
+      - MODE 50
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 50''] == 1 ? ''visible'' : ''hidden'''
+  lane-50-2-fill:
+    dataRef: RX Ethernet50/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/2
+      - TX Ethernet50/2
+      - STATE Ethernet50/2
+      formulas:
+      - 'u = data[''STATE Ethernet50/2''] == null ? -2 : (data[''STATE Ethernet50/2'']
+        != 1 ? -1 : (data[''RX Ethernet50/2''] == null or data[''TX Ethernet50/2'']
+        == null ? -2 : max(data[''RX Ethernet50/2''], data[''TX Ethernet50/2''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-50-2-label:
+    dataRef: RX Ethernet50/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/2
+      - TX Ethernet50/2
+      - STATE Ethernet50/2
+      formulas:
+      - 'u = data[''STATE Ethernet50/2''] == null ? -2 : (data[''STATE Ethernet50/2'']
+        != 1 ? -1 : (data[''RX Ethernet50/2''] == null or data[''TX Ethernet50/2'']
+        == null ? -2 : max(data[''RX Ethernet50/2''], data[''TX Ethernet50/2''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-50-2:
+    dataRef: MODE 50
+    bespoke:
+      dataRefs:
+      - MODE 50
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 50''] == 1 ? ''visible'' : ''hidden'''
+  lane-50-3-fill:
+    dataRef: RX Ethernet50/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/3
+      - TX Ethernet50/3
+      - STATE Ethernet50/3
+      formulas:
+      - 'u = data[''STATE Ethernet50/3''] == null ? -2 : (data[''STATE Ethernet50/3'']
+        != 1 ? -1 : (data[''RX Ethernet50/3''] == null or data[''TX Ethernet50/3'']
+        == null ? -2 : max(data[''RX Ethernet50/3''], data[''TX Ethernet50/3''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-50-3-label:
+    dataRef: RX Ethernet50/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/3
+      - TX Ethernet50/3
+      - STATE Ethernet50/3
+      formulas:
+      - 'u = data[''STATE Ethernet50/3''] == null ? -2 : (data[''STATE Ethernet50/3'']
+        != 1 ? -1 : (data[''RX Ethernet50/3''] == null or data[''TX Ethernet50/3'']
+        == null ? -2 : max(data[''RX Ethernet50/3''], data[''TX Ethernet50/3''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-50-3:
+    dataRef: MODE 50
+    bespoke:
+      dataRefs:
+      - MODE 50
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 50''] == 1 ? ''visible'' : ''hidden'''
+  lane-50-4-fill:
+    dataRef: RX Ethernet50/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/4
+      - TX Ethernet50/4
+      - STATE Ethernet50/4
+      formulas:
+      - 'u = data[''STATE Ethernet50/4''] == null ? -2 : (data[''STATE Ethernet50/4'']
+        != 1 ? -1 : (data[''RX Ethernet50/4''] == null or data[''TX Ethernet50/4'']
+        == null ? -2 : max(data[''RX Ethernet50/4''], data[''TX Ethernet50/4''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-50-4-label:
+    dataRef: RX Ethernet50/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet50/4
+      - TX Ethernet50/4
+      - STATE Ethernet50/4
+      formulas:
+      - 'u = data[''STATE Ethernet50/4''] == null ? -2 : (data[''STATE Ethernet50/4'']
+        != 1 ? -1 : (data[''RX Ethernet50/4''] == null or data[''TX Ethernet50/4'']
+        == null ? -2 : max(data[''RX Ethernet50/4''], data[''TX Ethernet50/4''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-50-4:
+    dataRef: MODE 50
+    bespoke:
+      dataRefs:
+      - MODE 50
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 50''] == 1 ? ''visible'' : ''hidden'''
+  normal-51-fill:
+    dataRef: RX Ethernet51
+    bespoke:
+      dataRefs:
+      - RX Ethernet51
+      - TX Ethernet51
+      - STATE Ethernet51
+      formulas:
+      - 'u = data[''STATE Ethernet51''] == null ? -2 : (data[''STATE Ethernet51'']
+        != 1 ? -1 : (data[''RX Ethernet51''] == null or data[''TX Ethernet51''] ==
+        null ? -2 : max(data[''RX Ethernet51''], data[''TX Ethernet51''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-51-label:
+    dataRef: RX Ethernet51
+    bespoke:
+      dataRefs:
+      - RX Ethernet51
+      - TX Ethernet51
+      - STATE Ethernet51
+      formulas:
+      - 'u = data[''STATE Ethernet51''] == null ? -2 : (data[''STATE Ethernet51'']
+        != 1 ? -1 : (data[''RX Ethernet51''] == null or data[''TX Ethernet51''] ==
+        null ? -2 : max(data[''RX Ethernet51''], data[''TX Ethernet51''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-51:
+    dataRef: MODE 51
+    bespoke:
+      dataRefs:
+      - MODE 51
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 51''] == 1 ? ''hidden'' : ''visible'''
+  lane-51-1-fill:
+    dataRef: RX Ethernet51/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/1
+      - TX Ethernet51/1
+      - STATE Ethernet51/1
+      formulas:
+      - 'u = data[''STATE Ethernet51/1''] == null ? -2 : (data[''STATE Ethernet51/1'']
+        != 1 ? -1 : (data[''RX Ethernet51/1''] == null or data[''TX Ethernet51/1'']
+        == null ? -2 : max(data[''RX Ethernet51/1''], data[''TX Ethernet51/1''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-51-1-label:
+    dataRef: RX Ethernet51/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/1
+      - TX Ethernet51/1
+      - STATE Ethernet51/1
+      formulas:
+      - 'u = data[''STATE Ethernet51/1''] == null ? -2 : (data[''STATE Ethernet51/1'']
+        != 1 ? -1 : (data[''RX Ethernet51/1''] == null or data[''TX Ethernet51/1'']
+        == null ? -2 : max(data[''RX Ethernet51/1''], data[''TX Ethernet51/1''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-51-1:
+    dataRef: MODE 51
+    bespoke:
+      dataRefs:
+      - MODE 51
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 51''] == 1 ? ''visible'' : ''hidden'''
+  lane-51-2-fill:
+    dataRef: RX Ethernet51/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/2
+      - TX Ethernet51/2
+      - STATE Ethernet51/2
+      formulas:
+      - 'u = data[''STATE Ethernet51/2''] == null ? -2 : (data[''STATE Ethernet51/2'']
+        != 1 ? -1 : (data[''RX Ethernet51/2''] == null or data[''TX Ethernet51/2'']
+        == null ? -2 : max(data[''RX Ethernet51/2''], data[''TX Ethernet51/2''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-51-2-label:
+    dataRef: RX Ethernet51/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/2
+      - TX Ethernet51/2
+      - STATE Ethernet51/2
+      formulas:
+      - 'u = data[''STATE Ethernet51/2''] == null ? -2 : (data[''STATE Ethernet51/2'']
+        != 1 ? -1 : (data[''RX Ethernet51/2''] == null or data[''TX Ethernet51/2'']
+        == null ? -2 : max(data[''RX Ethernet51/2''], data[''TX Ethernet51/2''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-51-2:
+    dataRef: MODE 51
+    bespoke:
+      dataRefs:
+      - MODE 51
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 51''] == 1 ? ''visible'' : ''hidden'''
+  lane-51-3-fill:
+    dataRef: RX Ethernet51/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/3
+      - TX Ethernet51/3
+      - STATE Ethernet51/3
+      formulas:
+      - 'u = data[''STATE Ethernet51/3''] == null ? -2 : (data[''STATE Ethernet51/3'']
+        != 1 ? -1 : (data[''RX Ethernet51/3''] == null or data[''TX Ethernet51/3'']
+        == null ? -2 : max(data[''RX Ethernet51/3''], data[''TX Ethernet51/3''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-51-3-label:
+    dataRef: RX Ethernet51/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/3
+      - TX Ethernet51/3
+      - STATE Ethernet51/3
+      formulas:
+      - 'u = data[''STATE Ethernet51/3''] == null ? -2 : (data[''STATE Ethernet51/3'']
+        != 1 ? -1 : (data[''RX Ethernet51/3''] == null or data[''TX Ethernet51/3'']
+        == null ? -2 : max(data[''RX Ethernet51/3''], data[''TX Ethernet51/3''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-51-3:
+    dataRef: MODE 51
+    bespoke:
+      dataRefs:
+      - MODE 51
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 51''] == 1 ? ''visible'' : ''hidden'''
+  lane-51-4-fill:
+    dataRef: RX Ethernet51/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/4
+      - TX Ethernet51/4
+      - STATE Ethernet51/4
+      formulas:
+      - 'u = data[''STATE Ethernet51/4''] == null ? -2 : (data[''STATE Ethernet51/4'']
+        != 1 ? -1 : (data[''RX Ethernet51/4''] == null or data[''TX Ethernet51/4'']
+        == null ? -2 : max(data[''RX Ethernet51/4''], data[''TX Ethernet51/4''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-51-4-label:
+    dataRef: RX Ethernet51/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet51/4
+      - TX Ethernet51/4
+      - STATE Ethernet51/4
+      formulas:
+      - 'u = data[''STATE Ethernet51/4''] == null ? -2 : (data[''STATE Ethernet51/4'']
+        != 1 ? -1 : (data[''RX Ethernet51/4''] == null or data[''TX Ethernet51/4'']
+        == null ? -2 : max(data[''RX Ethernet51/4''], data[''TX Ethernet51/4''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-51-4:
+    dataRef: MODE 51
+    bespoke:
+      dataRefs:
+      - MODE 51
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 51''] == 1 ? ''visible'' : ''hidden'''
+  normal-52-fill:
+    dataRef: RX Ethernet52
+    bespoke:
+      dataRefs:
+      - RX Ethernet52
+      - TX Ethernet52
+      - STATE Ethernet52
+      formulas:
+      - 'u = data[''STATE Ethernet52''] == null ? -2 : (data[''STATE Ethernet52'']
+        != 1 ? -1 : (data[''RX Ethernet52''] == null or data[''TX Ethernet52''] ==
+        null ? -2 : max(data[''RX Ethernet52''], data[''TX Ethernet52''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  normal-52-label:
+    dataRef: RX Ethernet52
+    bespoke:
+      dataRefs:
+      - RX Ethernet52
+      - TX Ethernet52
+      - STATE Ethernet52
+      formulas:
+      - 'u = data[''STATE Ethernet52''] == null ? -2 : (data[''STATE Ethernet52'']
+        != 1 ? -1 : (data[''RX Ethernet52''] == null or data[''TX Ethernet52''] ==
+        null ? -2 : max(data[''RX Ethernet52''], data[''TX Ethernet52''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  normal-52:
+    dataRef: MODE 52
+    bespoke:
+      dataRefs:
+      - MODE 52
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 52''] == 1 ? ''hidden'' : ''visible'''
+  lane-52-1-fill:
+    dataRef: RX Ethernet52/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/1
+      - TX Ethernet52/1
+      - STATE Ethernet52/1
+      formulas:
+      - 'u = data[''STATE Ethernet52/1''] == null ? -2 : (data[''STATE Ethernet52/1'']
+        != 1 ? -1 : (data[''RX Ethernet52/1''] == null or data[''TX Ethernet52/1'']
+        == null ? -2 : max(data[''RX Ethernet52/1''], data[''TX Ethernet52/1''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-52-1-label:
+    dataRef: RX Ethernet52/1
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/1
+      - TX Ethernet52/1
+      - STATE Ethernet52/1
+      formulas:
+      - 'u = data[''STATE Ethernet52/1''] == null ? -2 : (data[''STATE Ethernet52/1'']
+        != 1 ? -1 : (data[''RX Ethernet52/1''] == null or data[''TX Ethernet52/1'']
+        == null ? -2 : max(data[''RX Ethernet52/1''], data[''TX Ethernet52/1''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-52-1:
+    dataRef: MODE 52
+    bespoke:
+      dataRefs:
+      - MODE 52
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 52''] == 1 ? ''visible'' : ''hidden'''
+  lane-52-2-fill:
+    dataRef: RX Ethernet52/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/2
+      - TX Ethernet52/2
+      - STATE Ethernet52/2
+      formulas:
+      - 'u = data[''STATE Ethernet52/2''] == null ? -2 : (data[''STATE Ethernet52/2'']
+        != 1 ? -1 : (data[''RX Ethernet52/2''] == null or data[''TX Ethernet52/2'']
+        == null ? -2 : max(data[''RX Ethernet52/2''], data[''TX Ethernet52/2''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-52-2-label:
+    dataRef: RX Ethernet52/2
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/2
+      - TX Ethernet52/2
+      - STATE Ethernet52/2
+      formulas:
+      - 'u = data[''STATE Ethernet52/2''] == null ? -2 : (data[''STATE Ethernet52/2'']
+        != 1 ? -1 : (data[''RX Ethernet52/2''] == null or data[''TX Ethernet52/2'']
+        == null ? -2 : max(data[''RX Ethernet52/2''], data[''TX Ethernet52/2''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-52-2:
+    dataRef: MODE 52
+    bespoke:
+      dataRefs:
+      - MODE 52
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 52''] == 1 ? ''visible'' : ''hidden'''
+  lane-52-3-fill:
+    dataRef: RX Ethernet52/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/3
+      - TX Ethernet52/3
+      - STATE Ethernet52/3
+      formulas:
+      - 'u = data[''STATE Ethernet52/3''] == null ? -2 : (data[''STATE Ethernet52/3'']
+        != 1 ? -1 : (data[''RX Ethernet52/3''] == null or data[''TX Ethernet52/3'']
+        == null ? -2 : max(data[''RX Ethernet52/3''], data[''TX Ethernet52/3''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-52-3-label:
+    dataRef: RX Ethernet52/3
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/3
+      - TX Ethernet52/3
+      - STATE Ethernet52/3
+      formulas:
+      - 'u = data[''STATE Ethernet52/3''] == null ? -2 : (data[''STATE Ethernet52/3'']
+        != 1 ? -1 : (data[''RX Ethernet52/3''] == null or data[''TX Ethernet52/3'']
+        == null ? -2 : max(data[''RX Ethernet52/3''], data[''TX Ethernet52/3''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-52-3:
+    dataRef: MODE 52
+    bespoke:
+      dataRefs:
+      - MODE 52
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 52''] == 1 ? ''visible'' : ''hidden'''
+  lane-52-4-fill:
+    dataRef: RX Ethernet52/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/4
+      - TX Ethernet52/4
+      - STATE Ethernet52/4
+      formulas:
+      - 'u = data[''STATE Ethernet52/4''] == null ? -2 : (data[''STATE Ethernet52/4'']
+        != 1 ? -1 : (data[''RX Ethernet52/4''] == null or data[''TX Ethernet52/4'']
+        == null ? -2 : max(data[''RX Ethernet52/4''], data[''TX Ethernet52/4''])))'
+    fillColor:
+      bespokeDataRef: u
+      thresholds: *id001
+  lane-52-4-label:
+    dataRef: RX Ethernet52/4
+    bespoke:
+      dataRefs:
+      - RX Ethernet52/4
+      - TX Ethernet52/4
+      - STATE Ethernet52/4
+      formulas:
+      - 'u = data[''STATE Ethernet52/4''] == null ? -2 : (data[''STATE Ethernet52/4'']
+        != 1 ? -1 : (data[''RX Ethernet52/4''] == null or data[''TX Ethernet52/4'']
+        == null ? -2 : max(data[''RX Ethernet52/4''], data[''TX Ethernet52/4''])))'
+    label:
+      bespokeDataRef: u
+      separator: replace
+      units: percent
+      decimalPoints: 0
+      valueMappings:
+      - value: -2
+        text: "\u2014"
+      - value: -1
+        text: DOWN
+  lane-52-4:
+    dataRef: MODE 52
+    bespoke:
+      dataRefs:
+      - MODE 52
+      drives:
+      - elementName: g
+        elementPosition: 1
+        attribsSet:
+          visibility: 'data[''MODE 52''] == 1 ? ''visible'' : ''hidden'''
