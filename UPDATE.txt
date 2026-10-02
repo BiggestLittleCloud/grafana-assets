@@ -1,0 +1,18 @@
+Upload these four files to BiggestLittleCloud/grafana-assets, replacing matching names.
+
+ACC SVG:
+https://raw.githubusercontent.com/BiggestLittleCloud/grafana-assets/refs/heads/main/ACC01-Nectus-ports.svg?v=7
+ACC Panel Config:
+https://raw.githubusercontent.com/BiggestLittleCloud/grafana-assets/refs/heads/main/ACC01-panel.yaml?v=7
+
+EDGE SVG:
+https://raw.githubusercontent.com/BiggestLittleCloud/grafana-assets/refs/heads/main/EDGE01-Nectus-ports.svg?v=2
+EDGE Panel Config:
+https://raw.githubusercontent.com/BiggestLittleCloud/grafana-assets/refs/heads/main/EDGE01-panel.yaml?v=2
+
+Existing queries A-D and legends remain unchanged. Site Config stays empty. Disable Test Data Generation.
+
+Link up (ifOperStatus=1): display higher of RX/TX utilization percentage, with green/yellow/red thresholds.
+Other operational states: gray box, no text. Missing status/traffic: gray box with a dash.
+Administratively enabled but link down is displayed gray, since there is no live link to measure.
+Breakout mode switching, overlay alignment, dimensions and lower-row label positions are preserved.
